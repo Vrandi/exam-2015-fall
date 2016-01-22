@@ -3,6 +3,9 @@
 // Write a function that checks, if an array contains a number
 // that has 5 as divisor. If it has it should return true otherwise false.
 
+function hasDivisableBy5(numbers) {
+  return numbers.filter(num => num % 5 === 0).length > 0;
+}
 
 
 

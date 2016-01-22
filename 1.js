@@ -6,7 +6,9 @@
 
 
 
-
+function tripleEachElement(numbers) {
+  return numbers.map(num => num * 3);
+}
 
 
 
