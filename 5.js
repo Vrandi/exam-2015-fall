@@ -14,23 +14,21 @@ function CarStore(cars) {
   this.addCar = function(type, price, year) {
     var newCar = {type: type, price: price, year: year};
     this.cars.push(newCar);
-  }
+  };
 
   this.getSumPrice = function() {
     return this.cars.reduce((count, car) => count + car.price, 0);
-  }
+  };
 
   this.getOldestCarType = function() {
     return this.cars.reduce((car1, car2) => car1.year < car2.year ? car1 : car2).type;
-  }
+  };
 
   this.deleteCarByType = function(type) {
     var car = this.cars.filter(car => car.type === type);
     this.cars.splice(this.cars.indexOf(car)-1, 1);
-  }
+  };
 }
-
-
 
 
 var cars = [
